@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>SSH_Tool</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <Description>Tool to Explore EA Graphics files.
+https://moddinghubbrs.forumeiros.com/
+</Description>
+    <Copyright>lusji2011 - Big Evil</Copyright>
+    <PackageProjectUrl>https://moddinghubbrs.forumeiros.com/</PackageProjectUrl>
+    <RepositoryUrl>https://moddinghubbrs.forumeiros.com/</RepositoryUrl>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <PackageReleaseNotes>Beta Version</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\OneDrive\Área de Trabalho\readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
